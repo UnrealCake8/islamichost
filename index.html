@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Islamic Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background:
+        linear-gradient(rgba(5, 25, 20, 0.9), rgba(5, 25, 20, 0.95)),
+        url("https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      color: #f4d06f;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #e8e8e8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding-bottom: 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      text-decoration: none;
+      color: white;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(244, 208, 111, 0.35);
+      border-radius: 18px;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      transition: 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #f4d06f;
+      box-shadow: 0 15px 35px rgba(244, 208, 111, 0.25);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 16px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      font-size: 18px;
+      color: #f4d06f;
+      margin-bottom: 6px;
+    }
+
+    .card-content p {
+      font-size: 13px;
+      color: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #ccc;
+      background: rgba(0, 0, 0, 0.25);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .card img {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Your Islamic Page</h1>
+    <p>Explore Islamic knowledge, duas, Quran, Hadith, and more</p>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?auto=format&fit=crop&w=600&q=80" alt="Quran">
+        <div class="card-content">
+          <h3>Quran</h3>
+          <p>Read and learn the Quran</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=600&q=80" alt="Hadith">
+        <div class="card-content">
+          <h3>Hadith</h3>
+          <p>Sayings of the Prophet ﷺ</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&w=600&q=80" alt="Duas">
+        <div class="card-content">
+          <h3>Duas</h3>
+          <p>Daily supplications</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?auto=format&fit=crop&w=600&q=80" alt="Prayer">
+        <div class="card-content">
+          <h3>Salah</h3>
+          <p>Prayer guides and times</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=600&q=80" alt="Mosque">
+        <div class="card-content">
+          <h3>Mosques</h3>
+          <p>Beautiful Islamic places</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1530023367847-a683933f4172?auto=format&fit=crop&w=600&q=80" alt="Ramadan">
+        <div class="card-content">
+          <h3>Ramadan</h3>
+          <p>Fasting and worship</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=600&q=80" alt="Hajj">
+        <div class="card-content">
+          <h3>Hajj</h3>
+          <p>Pilgrimage guide</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=600&q=80" alt="Zakat">
+        <div class="card-content">
+          <h3>Zakat</h3>
+          <p>Charity and giving</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?auto=format&fit=crop&w=600&q=80" alt="99 Names">
+        <div class="card-content">
+          <h3>99 Names</h3>
+          <p>Names of Allah</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1574781330855-d0db2706b3d0?auto=format&fit=crop&w=600&q=80" alt="Seerah">
+        <div class="card-content">
+          <h3>Seerah</h3>
+          <p>Life of the Prophet ﷺ</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=600&q=80" alt="Islamic Stories">
+        <div class="card-content">
+          <h3>Stories</h3>
+          <p>Islamic stories and lessons</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1516383607781-913a19294fd1?auto=format&fit=crop&w=600&q=80" alt="Kids">
+        <div class="card-content">
+          <h3>Kids</h3>
+          <p>Islamic learning for children</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80" alt="Books">
+        <div class="card-content">
+          <h3>Books</h3>
+          <p>Islamic reading resources</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=600&q=80" alt="Articles">
+        <div class="card-content">
+          <h3>Articles</h3>
+          <p>Helpful Islamic articles</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Courses">
+        <div class="card-content">
+          <h3>Courses</h3>
+          <p>Structured Islamic learning</p>
+        </div>
+      </a>
+
+      
+
+         <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Events">
+        <div class="card-content">
+          <h3>Events</h3>
+          <p>Islamic events and reminders</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=600&q=80" alt="Calendar">
+        <div class="card-content">
+          <h3>Calendar</h3>
+          <p>Islamic dates and months</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=600&q=80" alt="Reminders">
+        <div class="card-content">
+          <h3>Reminders</h3>
+          <p>Daily Islamic reminders</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80" alt="Community">
+        <div class="card-content">
+          <h3>Community</h3>
+          <p>Connect and learn together</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Videos">
+        <div class="card-content">
+          <h3>Videos</h3>
+          <p>Watch Islamic content</p>
+        </div>
+      </a>
+
+
+        <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Gallery">
+        <div class="card-content">
+          <h3>Gallery</h3>
+          <p>Islamic art and designs</p>
+        </div>
+      </a>
+
+      <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Contact">
+        <div class="card-content">
+          <h3>Contact</h3>
+          <p>Get in touch</p>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    This page belongs to the public domain, with no copyright.
+  </footer>
+
+</body>
+</html>
